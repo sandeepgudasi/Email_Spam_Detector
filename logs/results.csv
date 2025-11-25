@@ -1,0 +1,175 @@
+timestamp,sender_email,message_text,prediction_label,spam_probability,reasons,suspicious_words,domain_rating,word_count,capital_letters,links
+2025-10-08T17:32:58.306730,sandeepgudasi3@gmail.com,its a spam will u proceed,Not Spam,0.0924,Low spam probability: 9.2%; Known safe domain; No typical spam keywords detected,,safe,6,0,0
+2025-10-08T17:34:12.492308,sandeepgudasi01@gmail.com,"Congratulations! You have been selected for a $10,000 loan. Click here to claim your prize immediately!",Spam,0.6938,"High spam probability: 69.4%; Suspicious words: claim, click, loan, prize","claim,click,loan,prize",safe,16,3,0
+2025-10-08T17:38:33.141920,sandeepgudasi01@gmail.com,"Congratulations! You have been selected for an exclusive work-from-home position that pays $4,000/week. Claim your spot now by visiting http://example.com/test (TEST LINK — safe). Click the link and enter the verification code to proceed.
+
+Position details:
+- Role: Remote Data Entry Specialist (part-time)
+- Pay: $4,000 / week (example)
+- Start: Immediate
+
+NOTE: This message is a fabricated test case for spam detection only. Do NOT use this content to contact or defraud anyone.",Spam,0.5142,"High spam probability: 51.4%; Suspicious words: claim, click, http; Contains hyperlinks; Excessive capitalization","claim,click,http",safe,74,30,1
+2025-10-08T17:45:18.077109,sandeepgudasi3@gmail.com,"Congratulations! You have been selected for an exclusive work-from-home position that pays $4,000/week. Claim your spot now by visiting http://example.com/test (TEST LINK — safe). Click the link and enter the verification code to proceed.
+
+Position details:
+- Role: Remote Data Entry Specialist (part-time)
+- Pay: $4,000 / week (example)
+- Start: Immediate
+
+NOTE: This message is a fabricated test case for spam detection only. Do NOT use this content to contact or defraud anyone.",Spam,0.5142,"High spam probability: 51.4%; Suspicious words: claim, click, http; Contains hyperlinks; Excessive capitalization","claim,click,http",safe,74,30,1
+2025-10-08T17:46:29.485778,rummycircle@gmail.com,"Congratulations! You have been selected for an exclusive work-from-home position that pays $4,000/week. Claim your spot now by visiting http://example.com/test (TEST LINK — safe). Click the link and enter the verification code to proceed.
+
+Position details:
+- Role: Remote Data Entry Specialist (part-time)
+- Pay: $4,000 / week (example)
+- Start: Immediate
+
+NOTE: This message is a fabricated test case for spam detection only. Do NOT use this content to contact or defraud anyone.",Spam,0.5142,"High spam probability: 51.4%; Suspicious words: claim, click, http; Contains hyperlinks; Excessive capitalization","claim,click,http",safe,74,30,1
+2025-10-08T18:03:56.739571,sandeepgudasi01@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Not Spam,0.5000,"Error in analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Sandeep/nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\Sandeep\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+",,unknown,0,0,0
+2025-10-08T18:05:07.308335,sandeepgudasi01@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Not Spam,0.5000,"Error in analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Sandeep/nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\Sandeep\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+",,unknown,0,0,0
+2025-10-08T18:08:28.519773,sandeepgudasi3@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Spam,0.9000,"Fallback analysis due to error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Sandeep/nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\Sandeep\\Desktop\\essentials\\Email_Spam_detector_mini_pro\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\Sandeep\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+","claim,click,http,limited,limited time,offer,prize,selected",safe,60,71,1
+2025-10-08T18:12:18.219955,sandeepgudasi3@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Not Spam,0.5441,"Moderate confidence: 54.4%; Ensemble ML model classified as legitimate; Detected 8 suspicious keywords: claim, click, http; Additional suspicious terms: limited, limited time, offer, prize, selected; Sender uses a trusted email provider; Contains 1 hyperlink(s) - common in spam; Excessive use of capital letters - spam indicator","claim,click,http,limited,limited time,offer,prize,selected",safe,60,71,1
+2025-10-08T18:19:19.864685,sandeepgudasi01@rummy.com,"Hi [Finance Team],
+
+I need an urgent wire transfer of $32,000 to the following vendor for an acquisition. This must be completed before 3 PM today. Please send the attached invoice and confirm when done.
+
+Vendor: Global Solutions LLC
+Account details: (see attachment)
+
+— Mark
+(CEO)",Not Spam,0.4223,"Moderate confidence: 42.2%; Ensemble ML model classified as legitimate; Detected 2 suspicious keywords: urgent, win; Sender domain has neutral reputation; Excessive use of capital letters - spam indicator","urgent,win",neutral,46,19,0
+2025-10-08T18:19:54.309276,sandeepgudasi01@gmail.com,"Hi [Finance Team],
+
+I need an urgent wire transfer of $32,000 to the following vendor for an acquisition. This must be completed before 3 PM today. Please send the attached invoice and confirm when done.
+
+Vendor: Global Solutions LLC
+Account details: (see attachment)
+
+— Mark
+(CEO)",Not Spam,0.4223,"Moderate confidence: 42.2%; Ensemble ML model classified as legitimate; Detected 2 suspicious keywords: urgent, win; Sender uses a trusted email provider; Excessive use of capital letters - spam indicator","urgent,win",safe,46,19,0
+2025-10-08T18:20:35.921459,sandeepgudasi01@gmail.com,"Congratulations! You have been selected for the position of Senior Remote Consultant. To secure your spot we need a scanned copy of your ID and a bank account for payroll processing.
+
+Please reply with:
+- Full name
+- Scanned ID (front & back)
+- Bank account number and routing code
+
+This role guarantees $3,500/week and immediate start.",Not Spam,0.3515,"Low confidence: 35.2%; Ensemble ML model classified as legitimate; Detected 3 suspicious keywords: congratulations, guarantee, selected; Sender uses a trusted email provider; Excessive use of capital letters - spam indicator","congratulations,guarantee,selected",safe,57,15,0
+2025-10-08T18:34:02.043161,sandeepgudasi01@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Spam,0.8697,"Very high confidence: 87.0%; Ensemble ML model classified as spam; Multiple algorithms agree on spam classification; Detected 9 suspicious keywords: claim, claim your, click; Additional suspicious terms: http, limited, limited time, offer, prize, selected; Sender uses a trusted email provider; Contains 1 hyperlink(s) - common in spam; Excessive use of capital letters - spam indicator","claim,claim your,click,http,limited,limited time,offer,prize,selected",safe,60,71,1
+2025-10-08T18:34:44.428055,jonnySinse@rummycircle.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Spam,0.8697,"Very high confidence: 87.0%; Ensemble ML model classified as spam; Multiple algorithms agree on spam classification; Detected 9 suspicious keywords: claim, claim your, click; Additional suspicious terms: http, limited, limited time, offer, prize, selected; Sender domain has neutral reputation; Contains 1 hyperlink(s) - common in spam; Excessive use of capital letters - spam indicator","claim,claim your,click,http,limited,limited time,offer,prize,selected",neutral,60,71,1
+2025-10-08T18:36:17.458775,sandeepgudasi01@gmail.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Spam,0.8697,"Very high confidence: 87.0%; Ensemble ML model classified as spam; Multiple algorithms agree on spam classification; Detected 9 suspicious keywords: claim, claim your, click; Additional suspicious terms: http, limited, limited time, offer, prize, selected; Sender uses a trusted email provider; Contains 1 hyperlink(s) - common in spam; Excessive use of capital letters - spam indicator","claim,claim your,click,http,limited,limited time,offer,prize,selected",safe,60,71,1
+2025-10-09T08:19:38.733852,indianhacker@rummycircle.com,"You have been PRE-SELECTED for an IMMEDIATE payout of $12,450.00 USD. To receive your funds you MUST verify your account within 24 HOURS.
+
+Verify here (TEST LINK): http://example.com/test-verify
+
+Failure to verify will result in PERMANENT forfeiture of the funds. Click the link and enter your bank details to proceed.
+
+Claim your PRIZE now — this is a LIMITED TIME offer.",Spam,0.8697,"Very high confidence: 87.0%; Ensemble ML model classified as spam; Multiple algorithms agree on spam classification; Detected 9 suspicious keywords: claim, claim your, click; Additional suspicious terms: http, limited, limited time, offer, prize, selected; Sender domain has neutral reputation; Contains 1 hyperlink(s) - common in spam; Excessive use of capital letters - spam indicator","claim,claim your,click,http,limited,limited time,offer,prize,selected",neutral,60,71,1

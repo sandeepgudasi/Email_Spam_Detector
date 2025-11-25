@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+	<title>Mail Scanner - Result</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="neon-bg">
+	<header class="nav">
+		<div class="logo">
+			<span class="shield-icon">🛡️</span>
+			<span class="logo-text">Mail Spam Detector</span>
+		</div>
+		<nav>
+			<a href="{{ url_for('home') }}" class="nav-link">Home</a>
+			<a href="{{ url_for('support') }}" class="nav-link">Support</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<h1 class="glow-sub">Scan Result</h1>
+		<div class="result-card {{ 'spam' if result.label == 'Spam' else 'ham' }}">
+			<div class="result-header">
+				<span class="label">{{ result.label }}</span>
+				<span class="prob">Confidence: {{ (result.spam_probability * 100) | round(1) }}%</span>
+			</div>
+			<div class="result-body">
+				<div class="analysis-section">
+					<h3>🔍 Analysis Summary</h3>
+					<ul>
+						{% for r in result.reasons %}
+						<li>{{ r }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				
+				<div class="analysis-section">
+					<h3>⚠️ Suspicious Elements</h3>
+					{% if result.suspicious_words %}
+						<div class="suspicious-words">
+							{% for word in result.suspicious_words %}
+							<span class="suspicious-tag">{{ word }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						<p class="safe-indicator">✅ No suspicious keywords detected</p>
+					{% endif %}
+				</div>
+				
+				<div class="analysis-section">
+					<h3>🌐 Sender Analysis</h3>
+					<div class="domain-rating {{ result.domain_rating }}">
+						<span class="rating-label">{{ result.domain_rating|capitalize }}</span>
+						<span class="rating-desc">
+							{% if result.domain_rating == 'safe' %}
+								Trusted email provider
+							{% elif result.domain_rating == 'suspicious' %}
+								Unusual or suspicious domain
+							{% elif result.domain_rating == 'unknown' %}
+								Domain not recognized
+							{% else %}
+								Neutral domain rating
+							{% endif %}
+						</span>
+					</div>
+				</div>
+				
+				<div class="analysis-section">
+					<h3>📊 Message Statistics</h3>
+					<ul class="stats">
+						<li>
+							<strong>{{ result.stats.word_count }}</strong>
+							<span>Words</span>
+						</li>
+						<li>
+							<strong>{{ result.stats.capital_letters }}</strong>
+							<span>Capital Letters</span>
+						</li>
+						<li>
+							<strong>{{ result.stats.links }}</strong>
+							<span>Links</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="action-buttons">
+			<a class="btn-secondary" href="{{ url_for('scan') }}">🔍 Scan Another</a>
+			<a class="btn-secondary" href="{{ url_for('home') }}">🏠 Back to Home</a>
+		</div>
+	</main>
+
+	<footer class="footer">Copyright © 2025 Email Spam detection. All rights reserved.</footer>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

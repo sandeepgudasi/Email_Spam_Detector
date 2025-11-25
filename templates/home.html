@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+	<title>Mail Scanner - Home</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="neon-bg">
+	<header class="nav">
+		<div class="logo">
+			<span class="shield-icon">🛡️</span>
+			<span class="logo-text">Mail Spam Detector</span>
+		</div>
+		<nav>
+			<a href="{{ url_for('home') }}" class="nav-link">Home</a>
+			<a href="{{ url_for('support') }}" class="nav-link">Support</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<h1 class="glow">Scan Emails for Spam</h1>
+			<p>Protect yourself from digital scams with AI-powered detection.</p>
+			<div class="hero-buttons">
+				<a class="btn-primary pulse" href="{{ url_for('scan') }}">Click here to begin</a>
+				<a class="btn-secondary" href="{{ url_for('how_to_use') }}">How to Use</a>
+			</div>
+		</section>
+
+		<section class="cards">
+			<h2 class="glow-sub">Why Mail Scanner?</h2>
+			<div class="card-grid">
+				{% for i in range(1, 11) %}
+				<div class="card">
+					<h3>Recent Scam Pattern #{{ i }}</h3>
+					<p>
+						Attackers use urgent language, fake rewards, and suspicious links to trick users.
+						Be cautious with unsolicited messages asking for personal or financial info.
+					</p>
+				</div>
+				{% endfor %}
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">Copyright © 2025 Email Spam detection. All rights reserved.</footer>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

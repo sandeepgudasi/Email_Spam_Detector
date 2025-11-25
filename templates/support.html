@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+	<title>Mail Scanner - Support</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="neon-bg">
+	<header class="nav">
+		<div class="logo">
+			<span class="shield-icon">🛡️</span>
+			<span class="logo-text">Mail Spam Detector</span>
+		</div>
+		<nav>
+			<a href="{{ url_for('home') }}" class="nav-link">Home</a>
+			<a href="{{ url_for('support') }}" class="nav-link active">Support</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<h1 class="glow-sub">Support</h1>
+		
+		<div class="support-content">
+			<div class="contact-section">
+				<h2>📞 Contact Information</h2>
+				<div class="contact-layout">
+					<div class="contact-row">
+						<div class="contact-item">
+							<span class="contact-icon">📞</span>
+							<div class="contact-details">
+								<h3>Phone</h3>
+								<p>+91 9945294083</p>
+								<p>+91 8431085089</p>
+								<p>+91 8296716108</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<span class="contact-icon">✉️</span>
+							<div class="contact-details">
+								<h3>Email</h3>
+								<p>support@mailspamdetector.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-row">
+						<div class="contact-item address-item">
+							<span class="contact-icon">📍</span>
+							<div class="contact-details">
+								<h3>Address</h3>
+								<p>Basava Vidya Nagar, Shripewadi Rd, Nipani, Karnataka 591237<br>India</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="help-section">
+				<h2>🆘 Help & Resources</h2>
+				<ul class="help-list">
+					<li>Common questions about phishing and spam safety</li>
+					<li>How to report suspicious emails</li>
+					<li>Tips to stay safe online</li>
+					<li>Understanding spam detection results</li>
+					<li>Best practices for email security</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">Copyright © 2025 Email Spam detection. All rights reserved.</footer>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

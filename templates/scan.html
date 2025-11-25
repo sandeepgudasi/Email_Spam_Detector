@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+	<title>Mail Scanner - Scan</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="neon-bg">
+	<header class="nav">
+		<div class="logo">
+			<span class="shield-icon">🛡️</span>
+			<span class="logo-text">Mail Spam Detector</span>
+		</div>
+		<nav>
+			<a href="{{ url_for('home') }}" class="nav-link">Home</a>
+			<a href="{{ url_for('support') }}" class="nav-link">Support</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<h1 class="glow-sub">Scan Message</h1>
+		{% if error_message %}
+			<div class="alert">{{ error_message }}</div>
+		{% endif %}
+		<form method="post" class="form-card">
+			<label>Sender Email</label>
+			<input type="email" name="sender_email" placeholder="someone@example.com" required />
+			<label>Message</label>
+			<textarea name="message_text" rows="8" placeholder="Paste email message text here" required></textarea>
+			<button class="btn-primary" type="submit">Scan Now</button>
+		</form>
+	</main>
+
+	<footer class="footer">Copyright © 2025 Email Spam detection. All rights reserved.</footer>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

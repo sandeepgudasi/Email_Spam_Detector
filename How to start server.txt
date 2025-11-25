@@ -1,0 +1,16 @@
+How to start server
+
+cd "file name"
+
+.\.venv\Scripts\activate
+
+       pip install joblib
+
+       pip show joblib
+
+       pip install -r requirements.txt
+
+python app.py
+
+1st link => display output in only this pc
+2nd link => display output in many screen connected to same wifi 
